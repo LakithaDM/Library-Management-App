@@ -36,6 +36,7 @@ class TransactionList extends StatelessWidget {
                 return Card(
                   elevation: 5,
                   child: Container(
+                    width: double.infinity,
                     child: Row(
                       children: <Widget>[
                         Container(
@@ -60,8 +61,7 @@ class TransactionList extends StatelessWidget {
                             ),
                           ),
                         ),
-                        Container(
-                          width: 200,
+                        Expanded(
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: <Widget>[
