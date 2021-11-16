@@ -46,9 +46,9 @@ class _BooksScreenState extends State<BooksScreen> {
                       child: Ink(
                         height: 400,
                         width: 250,
-                        decoration: BoxDecoration(
-                          image: DecorationImage(
-                            image: AssetImage('assets/images/tom.png'),
+                        decoration:  BoxDecoration(
+                          image:  DecorationImage(
+                            image:  AssetImage('assets/images/tom.png'),
                             fit: BoxFit.cover,
                           ),
                         ),

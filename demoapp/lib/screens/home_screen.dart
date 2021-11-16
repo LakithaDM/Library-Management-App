@@ -1,4 +1,6 @@
 import 'package:demoapp/model/Transaction.dart';
+import 'package:demoapp/screens/about_us.dart';
+import 'package:demoapp/screens/contacts.dart';
 import 'package:flutter/material.dart';
 import 'books_screen.dart';
 import 'login_screen.dart';
@@ -85,7 +87,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => BooksScreen()),
+                        MaterialPageRoute(builder: (context) => AboutUs()),
                       );
                     },
                     child: Text(
@@ -101,7 +103,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => BooksScreen()),
+                        MaterialPageRoute(builder: (context) => ContactUs()),
                       );
                     },
                     child: Text(
