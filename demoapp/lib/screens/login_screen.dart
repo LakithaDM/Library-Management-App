@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'home_screen.dart';
 
-
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
 
@@ -22,7 +21,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
   // firebase
   final _auth = FirebaseAuth.instance;
-  
+
   // string for displaying the error Message
   String? errorMessage;
 
@@ -117,19 +116,24 @@ class _LoginScreenState extends State<LoginScreen> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
                     SizedBox(
-                        height: 200,
+                        height: 300,
                         child: Image.asset(
-                          "assets/its.png",
+                          "assets/images/app_logo.png",
                           fit: BoxFit.contain,
                         )),
-                    SizedBox(height: 45),
+                    SizedBox(height: 5),
                     emailField,
                     SizedBox(height: 25),
                     passwordField,
                     SizedBox(height: 35),
                     loginButton,
                     SizedBox(height: 15),
-                    
+                    Container(
+                      child: Text(
+                        'Powered by Team Alchemists',
+                        style: TextStyle(color: Colors.grey),
+                      ),
+                    )
                   ],
                 ),
               ),
@@ -181,7 +185,3 @@ class _LoginScreenState extends State<LoginScreen> {
     }
   }
 }
-
-      
-    
-  

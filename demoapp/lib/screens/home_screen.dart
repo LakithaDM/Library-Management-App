@@ -31,15 +31,15 @@ class _HomeScreenState extends State<HomeScreen> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               SizedBox(
-                height: 150,
-                child: Image.asset("assets/its.png", fit: BoxFit.contain),
+                height: 240,
+                child: Image.asset("assets/images/app_logo.png", fit: BoxFit.contain),
               ),
               Text(
-                "Welcome Back",
+                "Welcome Back!",
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
               SizedBox(
-                height: 10,
+                height: 0,
               ),
               SizedBox(
                 height: 15,
