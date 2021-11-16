@@ -39,28 +39,90 @@ class _HomeScreenState extends State<HomeScreen> {
               SizedBox(
                 height: 15,
               ),
-              RaisedButton(
-                  child: Text(
-                    "Logout",
-                    style: TextStyle(color: Colors.white),
-                  ),
-                  color: Colors.blueAccent,
-                  onPressed: () {
-                    logout(context);
-                  }),
-              RaisedButton(
-                color: Colors.blueAccent,
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => BooksScreen()),
-                  );
-                },
-                child: Text(
-                  'Read Books',
-                  style: TextStyle(color: Colors.white),
+              Column(children: <Widget>[
+                Container(
+                  height: 20,
                 ),
-              )
+                SizedBox(
+                  width: 130,
+                  child: RaisedButton(
+                    color: Colors.blueAccent,
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => BooksScreen()),
+                      );
+                    },
+                    child: Text(
+                      'Manage Books',
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  width: 130,
+                  child: RaisedButton(
+                    color: Colors.blueAccent,
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => BooksScreen()),
+                      );
+                    },
+                    child: Text(
+                      'Read Books',
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  width: 130,
+                  child: RaisedButton(
+                    color: Colors.blueAccent,
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => BooksScreen()),
+                      );
+                    },
+                    child: Text(
+                      'About Us',
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  width: 130,
+                  child: RaisedButton(
+                    color: Colors.blueAccent,
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => BooksScreen()),
+                      );
+                    },
+                    child: Text(
+                      'Contact',
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
+                ),
+                Container(
+                  height: 30,
+                ),
+                SizedBox(
+                  width: 130,
+                  child: RaisedButton(
+                      child: Text(
+                        "Logout",
+                        style: TextStyle(color: Colors.white),
+                      ),
+                      color: Colors.redAccent,
+                      onPressed: () {
+                        logout(context);
+                      }),
+                ),
+              ]),
             ],
           ),
         ),
