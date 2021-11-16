@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "433155465890",
+    "project_id": "new-auth-fb565",
+    "storage_bucket": "new-auth-fb565.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:433155465890:android:e79ffacf862e1d68cbedfb",
+        "android_client_info": {
+          "package_name": "com.example.demoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "433155465890-emto7lphgdan6a42jpsr125gb0vqeh0i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.demoapp",
+            "certificate_hash": "cbce13b469dc4bf5dce102468cd6941168e84b53"
+          }
+        },
+        {
+          "client_id": "433155465890-9ksq5sg2l8ftug9sb4evqht8e6o31rhm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlegT-7SyqSBT-Npb0prm4-OIu3GvaL1Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "433155465890-9ksq5sg2l8ftug9sb4evqht8e6o31rhm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
