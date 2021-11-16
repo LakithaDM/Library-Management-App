@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'books_screen.dart';
 import 'login_screen.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -9,10 +10,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-
   @override
-  
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -42,11 +40,27 @@ class _HomeScreenState extends State<HomeScreen> {
                 height: 15,
               ),
               RaisedButton(
-                  child: Text("Logout",style: TextStyle(color: Colors.white),),
+                  child: Text(
+                    "Logout",
+                    style: TextStyle(color: Colors.white),
+                  ),
                   color: Colors.blueAccent,
                   onPressed: () {
                     logout(context);
                   }),
+              RaisedButton(
+                color: Colors.blueAccent,
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => BooksScreen()),
+                  );
+                },
+                child: Text(
+                  'Read Books',
+                  style: TextStyle(color: Colors.white),
+                ),
+              )
             ],
           ),
         ),

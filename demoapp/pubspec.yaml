@@ -38,6 +38,8 @@ dependencies:
   fluttertoast: ^8.0.8
   firebase_auth: ^3.2.0
   cloud_firestore: ^3.1.0
+  syncfusion_flutter_pdfviewer: 
+  syncfusion_flutter_pdfviewer_web: ^19.3.53-beta
 
 dev_dependencies:
   flutter_test:
@@ -65,6 +67,27 @@ flutter:
   assets:
     - assets/logo.png
     - assets/its.png
+    - assets/images/waiting.png
+    - assets/images/tom.png
+    - assets/images/OIP.png
+    - assets/images/oliver.png
+    - assets/images/charlot.png
+    - assets/images/steve.png
+    - assets/images/shakes.png
+    - assets/images/lib.png
+    - assets/images/its.png
+    - assets/images/bookflo.png
+    - assets/images/sltc.png
+    - assets/books/pdfreader.pdf
+    - assets/books/Tom.pdf
+    - assets/images/arundika.jpg
+    - assets/books/Oliver.pdf
+    - assets/books/Mabeth.pdf
+    - assets/books/Charlottes.pdf
+    - assets/books/arundhika.pdf
+    - assets/images/flo.png
+    
+    
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -78,17 +101,34 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
-  #   - family: Trajan Pro
-  #     fonts:
-  #       - asset: fonts/TrajanPro.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700
-  #
+    
+  fonts:
+    - family: OpenSans
+      fonts:
+        - asset: assets/fonts/OpenSans-Regular.ttf
+        - asset: assets/fonts/OpenSans-Bold.ttf
+          weight: 700
+    - family: Quicksand
+      fonts:
+        - asset: assets/fonts/Quicksand-Regular.ttf
+        - asset: assets/fonts/Quicksand-Bold.ttf
+          weight: 700  
+    - family: Raleway
+      fonts:
+        - asset: assets/fonts/Raleway-Regular.ttf
+        - asset: assets/fonts/Raleway-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Raleway-Black.ttf
+          weight: 900
+    - family: RobotoCondensed
+      fonts:
+        - asset: assets/fonts/RobotoCondensed-Regular.ttf
+        - asset: assets/fonts/RobotoCondensed-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/RobotoCondensed-Light.ttf
+          weight: 300
+        - asset: assets/fonts/RobotoCondensed-Italic.ttf
+          style: italic
+
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
