@@ -2,6 +2,7 @@ import 'package:demoapp/model/Transaction.dart';
 import 'package:demoapp/screens/about_us.dart';
 import 'package:demoapp/screens/contacts.dart';
 import 'package:flutter/material.dart';
+import '../main_drawer.dart';
 import 'books_screen.dart';
 import 'login_screen.dart';
 import 'new_transaction.dart';
@@ -20,9 +21,30 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Welcome"),
+        title: const Text("Main Menu"),
         centerTitle: true,
+        // actions: <Widget>[
+        //   IconButton(
+        //     onPressed: () {
+        //       logout(context);
+        //     },
+        //     icon: Icon(Icons.logout),
+        //   )
+        // ],
+        actions: <Widget>[
+         IconButton(
+            onPressed: () {
+               Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => BooksScreen()),
+                      );
+            },
+            icon:Image.asset('assets/images/OIP.png'),
+          )
+        ],
       ),
+      //drawer: MainDrawer(),
+      
       body: Center(
         child: Padding(
           padding: EdgeInsets.all(20),
@@ -34,10 +56,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 height: 240,
                 child: Image.asset("assets/images/app_logo.png", fit: BoxFit.contain),
               ),
-              Text(
-                "Welcome Back!",
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-              ),
+              
               SizedBox(
                 height: 0,
               ),
@@ -48,22 +67,22 @@ class _HomeScreenState extends State<HomeScreen> {
                 Container(
                   height: 20,
                 ),
-                SizedBox(
-                  width: 130,
-                  child: RaisedButton(
-                    color: Colors.blueAccent,
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => MyHomePage()),
-                      );
-                    },
-                    child: Text(
-                      'Manage Books',
-                      style: TextStyle(color: Colors.white),
-                    ),
-                  ),
-                ),
+                // SizedBox(
+                //   width: 130,
+                //   child: RaisedButton(
+                //     color: Colors.blueAccent,
+                //     onPressed: () {
+                //       Navigator.push(
+                //         context,
+                //         MaterialPageRoute(builder: (context) => MyHomePage()),
+                //       );
+                //     },
+                //     child: Text(
+                //       'Manage Books',
+                //       style: TextStyle(color: Colors.white),
+                //     ),
+                //   ),
+                // ),
                 SizedBox(
                   width: 130,
                   child: RaisedButton(
@@ -203,26 +222,31 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          'Manage Books',
-          style: TextStyle(fontFamily: 'OpenSans'),
+        title: Center(
+          child: Text(
+            'Manage Books',
+            style: TextStyle(fontFamily: 'OpenSans'),
+          ),
         ),
         actions: <Widget>[
-          /*IconButton(
-            icon: Icon(Icons.add),
-            onPressed: () => _startAddNewTransaction(context),
-          ),*/
-          IconButton(
+         IconButton(
             onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => BooksScreen()),
-              );
+               logout(context);
             },
-            icon: Image.asset('assets/images/OIP.png'),
+            icon: Icon(Icons.logout),
           )
         ],
+      leading: IconButton (
+                 icon: Icon(Icons.menu), 
+                 onPressed: () { 
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => HomeScreen()),
+                     );
+                 },
+            ),
       ),
+      //drawer: MainDrawer(),
       //drawer: MainDrawer(),
       body: SingleChildScrollView(
         child: Column(
@@ -255,4 +279,15 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
     );
   }
-}
+
+    // the logout function
+  Future<void> logout(BuildContext context) async {
+    Navigator.of(context).pushReplacement(
+        MaterialPageRoute(builder: (context) => LoginScreen()));
+  }
+
+   // the logout function
+
+  }
+
+
