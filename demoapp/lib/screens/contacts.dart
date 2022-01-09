@@ -8,21 +8,95 @@ class ContactUs extends StatelessWidget {
         title: Text('Contact Us'),
       ),
       body: Container(
-        child: SingleChildScrollView(
-          child: Column(
-            //mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              Container(
-                height: 50,
-              ),
-              Container(
-                width: double.infinity,
-                child: Row(children: <Widget>[
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage("assets/images/body.jpg"),
+            fit: BoxFit.cover,
+          ),
+        ),
+        child: Column(
+          //mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Container(
+              height: 50,
+            ),
+            Container(
+              width: double.infinity,
+              child: Row(children: <Widget>[
+                Container(
+                  padding: EdgeInsets.only(left: 15),
+                  child: CircleAvatar(
+                    radius: 50,
+                    backgroundImage: AssetImage('assets/images/laki.png'),
+                  ),
+                ),
+                Expanded(
+                  child: Column(
+                    children: [
+                      Container(
+                        padding: EdgeInsets.only(left: 10),
+                        width: 277,
+                        height: 25,
+                        alignment: Alignment.topLeft,
+                        child: Text(
+                          "Lakitha Madanayake",
+                          style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                      Container(
+                        padding: EdgeInsets.only(left: 10),
+                        width: 277,
+                        height: 15,
+                        alignment: Alignment.topLeft,
+                        child: Text(
+                          "Mobile application developer",
+                          style: TextStyle(
+                            fontSize: 13,
+                          ),
+                        ),
+                      ),
+                      Container(
+                        padding: EdgeInsets.only(left: 10),
+                        width: 277,
+                        height: 15,
+                        alignment: Alignment.topLeft,
+                        child: Text(
+                          "lakitham@sltc.ac.lk",
+                          style: TextStyle(
+                            fontSize: 13,
+                          ),
+                        ),
+                      ),
+                      Container(
+                        padding: EdgeInsets.only(left: 10),
+                        width: 277,
+                        height: 15,
+                        alignment: Alignment.topLeft,
+                        child: Text(
+                          "+94775938253",
+                          style: TextStyle(
+                            fontSize: 13,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ]),
+            ),
+            Container(height: 40,),
+            Container(
+              width: double.infinity,
+              child: Row(
+                children: <Widget>[
                   Container(
                     padding: EdgeInsets.only(left: 15),
                     child: CircleAvatar(
                       radius: 50,
-                      backgroundImage: AssetImage('assets/images/laki.png'),
+                      backgroundImage: AssetImage('assets/images/achi.png'),
                     ),
                   ),
                   Expanded(
@@ -34,7 +108,7 @@ class ContactUs extends StatelessWidget {
                           height: 25,
                           alignment: Alignment.topLeft,
                           child: Text(
-                            "Lakitha Madanayake",
+                            "Achini Shashikala",
                             style: TextStyle(
                               fontSize: 18,
                               fontWeight: FontWeight.bold,
@@ -59,7 +133,7 @@ class ContactUs extends StatelessWidget {
                           height: 15,
                           alignment: Alignment.topLeft,
                           child: Text(
-                            "lakitham@sltc.ac.lk",
+                            "achinim@sltc.ac.lk",
                             style: TextStyle(
                               fontSize: 13,
                             ),
@@ -71,7 +145,7 @@ class ContactUs extends StatelessWidget {
                           height: 15,
                           alignment: Alignment.topLeft,
                           child: Text(
-                            "+94775938253",
+                            "+94766454993",
                             style: TextStyle(
                               fontSize: 13,
                             ),
@@ -80,220 +154,150 @@ class ContactUs extends StatelessWidget {
                       ],
                     ),
                   ),
-                ]),
+                ],
               ),
-              Container(height: 40,),
-              Container(
-                width: double.infinity,
-                child: Row(
-                  children: <Widget>[
-                    Container(
-                      padding: EdgeInsets.only(left: 15),
-                      child: CircleAvatar(
-                        radius: 50,
-                        backgroundImage: AssetImage('assets/images/achi.png'),
-                      ),
+            ),
+          Container(height: 40,),
+            Container(
+              width: double.infinity,
+              child: Row(
+                children: <Widget>[
+                  Container(
+                    padding: EdgeInsets.only(left: 15),
+                    child: CircleAvatar(
+                      radius: 50,
+                      backgroundImage: AssetImage('assets/images/dulan.png'),
                     ),
-                    Expanded(
-                      child: Column(
-                        children: [
-                          Container(
-                            padding: EdgeInsets.only(left: 10),
-                            width: 277,
-                            height: 25,
-                            alignment: Alignment.topLeft,
-                            child: Text(
-                              "Achini Shashikala",
-                              style: TextStyle(
-                                fontSize: 18,
-                                fontWeight: FontWeight.bold,
-                              ),
+                  ),
+                  Expanded(
+                    child: Column(
+                      children: [
+                        Container(
+                          padding: EdgeInsets.only(left: 10),
+                          width: 277,
+                          height: 25,
+                          alignment: Alignment.topLeft,
+                          child: Text(
+                            "Dulan Pabasara",
+                            style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold,
                             ),
                           ),
-                          Container(
-                            padding: EdgeInsets.only(left: 10),
-                            width: 277,
-                            height: 15,
-                            alignment: Alignment.topLeft,
-                            child: Text(
-                              "Mobile application developer",
-                              style: TextStyle(
-                                fontSize: 13,
-                              ),
+                        ),
+                        Container(
+                          padding: EdgeInsets.only(left: 10),
+                          width: 277,
+                          height: 15,
+                          alignment: Alignment.topLeft,
+                          child: Text(
+                            "Software Developer",
+                            style: TextStyle(
+                              fontSize: 13,
                             ),
                           ),
-                          Container(
-                            padding: EdgeInsets.only(left: 10),
-                            width: 277,
-                            height: 15,
-                            alignment: Alignment.topLeft,
-                            child: Text(
-                              "achinim@sltc.ac.lk",
-                              style: TextStyle(
-                                fontSize: 13,
-                              ),
+                        ),
+                        Container(
+                          padding: EdgeInsets.only(left: 10),
+                          width: 277,
+                          height: 15,
+                          alignment: Alignment.topLeft,
+                          child: Text(
+                            "dulanim@sltc.ac.lk ",
+                            style: TextStyle(
+                              fontSize: 13,
                             ),
                           ),
-                          Container(
-                            padding: EdgeInsets.only(left: 10),
-                            width: 277,
-                            height: 15,
-                            alignment: Alignment.topLeft,
-                            child: Text(
-                              "+94766454993",
-                              style: TextStyle(
-                                fontSize: 13,
-                              ),
+                        ),
+                        Container(
+                          padding: EdgeInsets.only(left: 10),
+                          width: 277,
+                          height: 15,
+                          alignment: Alignment.topLeft,
+                          child: Text(
+                            "+94769400403",
+                            style: TextStyle(
+                              fontSize: 13,
                             ),
                           ),
-                        ],
-                      ),
+                        ),
+                      ],
                     ),
-                  ],
-                ),
+                  ),
+                ],
               ),
+            ),
             Container(height: 40,),
-              Container(
-                width: double.infinity,
-                child: Row(
-                  children: <Widget>[
-                    Container(
-                      padding: EdgeInsets.only(left: 15),
-                      child: CircleAvatar(
-                        radius: 50,
-                        backgroundImage: AssetImage('assets/images/dulan.png'),
-                      ),
+            Container(
+              width: double.infinity,
+              child: Row(
+                children: <Widget>[
+                  Container(
+                    padding: EdgeInsets.only(left: 15),
+                    child: CircleAvatar(
+                      radius: 50,
+                      backgroundImage: AssetImage('assets/images/wagee.png'),
                     ),
-                    Expanded(
-                      child: Column(
-                        children: [
-                          Container(
-                            padding: EdgeInsets.only(left: 10),
-                            width: 277,
-                            height: 25,
-                            alignment: Alignment.topLeft,
-                            child: Text(
-                              "Dulan Pabasara",
-                              style: TextStyle(
-                                fontSize: 18,
-                                fontWeight: FontWeight.bold,
-                              ),
+                  ),
+                  Expanded(
+                    child: Column(
+                      children: [
+                        Container(
+                          padding: EdgeInsets.only(left: 10),
+                          width: 277,
+                          height: 25,
+                          alignment: Alignment.topLeft,
+                          child: Text(
+                            "Wageesha Aluthgama",
+                            style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold,
                             ),
                           ),
-                          Container(
-                            padding: EdgeInsets.only(left: 10),
-                            width: 277,
-                            height: 15,
-                            alignment: Alignment.topLeft,
-                            child: Text(
-                              "Software Developer",
-                              style: TextStyle(
-                                fontSize: 13,
-                              ),
+                        ),
+                        Container(
+                          padding: EdgeInsets.only(left: 10),
+                          width: 277,
+                          height: 15,
+                          alignment: Alignment.topLeft,
+                          child: Text(
+                            "UI/UX Developer",
+                            style: TextStyle(
+                              fontSize: 13,
                             ),
                           ),
-                          Container(
-                            padding: EdgeInsets.only(left: 10),
-                            width: 277,
-                            height: 15,
-                            alignment: Alignment.topLeft,
-                            child: Text(
-                              "dulanim@sltc.ac.lk ",
-                              style: TextStyle(
-                                fontSize: 13,
-                              ),
+                        ),
+                        Container(
+                          padding: EdgeInsets.only(left: 10),
+                          width: 277,
+                          height: 15,
+                          alignment: Alignment.topLeft,
+                          child: Text(
+                            "wageeshaa@sltc.ac.lk ",
+                            style: TextStyle(
+                              fontSize: 13,
                             ),
                           ),
-                          Container(
-                            padding: EdgeInsets.only(left: 10),
-                            width: 277,
-                            height: 15,
-                            alignment: Alignment.topLeft,
-                            child: Text(
-                              "+94769400403",
-                              style: TextStyle(
-                                fontSize: 13,
-                              ),
+                        ),
+                        Container(
+                          padding: EdgeInsets.only(left: 10),
+                          width: 277,
+                          height: 15,
+                          alignment: Alignment.topLeft,
+                          child: Text(
+                            "+94703258006",
+                            style: TextStyle(
+                              fontSize: 13,
                             ),
                           ),
-                        ],
-                      ),
+                        ),
+                      ],
                     ),
-                  ],
-                ),
+                  ),
+                ],
               ),
-              Container(height: 40,),
-              Container(
-                width: double.infinity,
-                child: Row(
-                  children: <Widget>[
-                    Container(
-                      padding: EdgeInsets.only(left: 15),
-                      child: CircleAvatar(
-                        radius: 50,
-                        backgroundImage: AssetImage('assets/images/wagee.png'),
-                      ),
-                    ),
-                    Expanded(
-                      child: Column(
-                        children: [
-                          Container(
-                            padding: EdgeInsets.only(left: 10),
-                            width: 277,
-                            height: 25,
-                            alignment: Alignment.topLeft,
-                            child: Text(
-                              "Wageesha Aluthgama",
-                              style: TextStyle(
-                                fontSize: 18,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
-                          Container(
-                            padding: EdgeInsets.only(left: 10),
-                            width: 277,
-                            height: 15,
-                            alignment: Alignment.topLeft,
-                            child: Text(
-                              "UI/UX Developer",
-                              style: TextStyle(
-                                fontSize: 13,
-                              ),
-                            ),
-                          ),
-                          Container(
-                            padding: EdgeInsets.only(left: 10),
-                            width: 277,
-                            height: 15,
-                            alignment: Alignment.topLeft,
-                            child: Text(
-                              "wageeshaa@sltc.ac.lk ",
-                              style: TextStyle(
-                                fontSize: 13,
-                              ),
-                            ),
-                          ),
-                          Container(
-                            padding: EdgeInsets.only(left: 10),
-                            width: 277,
-                            height: 15,
-                            alignment: Alignment.topLeft,
-                            child: Text(
-                              "+94703258006",
-                              style: TextStyle(
-                                fontSize: 13,
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );

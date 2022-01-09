@@ -95,6 +95,10 @@ flutter:
     - assets/images/flo_ro.png
     - assets/images/backgroundimg.jpg
     - assets/images/campus.jpg
+    - assets/images/owl.png
+    - assets/images/forest.jpg
+    - assets/images/body.jpg
+    - assets/images/body2.jpg
     
   #   - images/a_dot_ham.jpeg
 

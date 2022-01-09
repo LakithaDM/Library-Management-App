@@ -44,109 +44,117 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       //drawer: MainDrawer(),
       
-      body: Center(
-        child: Padding(
-          padding: EdgeInsets.all(20),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: <Widget>[
-              SizedBox(
-                height: 240,
-                child: Image.asset("assets/images/app_logo.png", fit: BoxFit.contain),
-              ),
-              
-              SizedBox(
-                height: 0,
-              ),
-              SizedBox(
-                height: 15,
-              ),
-              Column(children: <Widget>[
-                Container(
-                  height: 20,
-                ),
-                // SizedBox(
-                //   width: 130,
-                //   child: RaisedButton(
-                //     color: Colors.blueAccent,
-                //     onPressed: () {
-                //       Navigator.push(
-                //         context,
-                //         MaterialPageRoute(builder: (context) => MyHomePage()),
-                //       );
-                //     },
-                //     child: Text(
-                //       'Manage Books',
-                //       style: TextStyle(color: Colors.white),
-                //     ),
-                //   ),
-                // ),
+      body: Container(
+         decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage("assets/images/body.jpg"),
+            fit: BoxFit.cover,
+          ),
+        ),
+        child: Center(
+          child: Padding(
+            padding: EdgeInsets.all(20),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: <Widget>[
                 SizedBox(
-                  width: 130,
-                  child: RaisedButton(
-                    color: Colors.blueAccent,
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => BooksScreen()),
-                      );
-                    },
-                    child: Text(
-                      'Read Books',
-                      style: TextStyle(color: Colors.white),
-                    ),
+                  height: 270,
+                  child: Image.asset("assets/images/owl.png", fit: BoxFit.contain),
+                ),
+                
+                SizedBox(
+                  height: 0,
+                ),
+                SizedBox(
+                  height: 15,
+                ),
+                Column(children: <Widget>[
+                  Container(
+                    height: 20,
                   ),
-                ),
-                SizedBox(
-                  width: 130,
-                  child: RaisedButton(
-                    color: Colors.blueAccent,
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => AboutUs()),
-                      );
-                    },
-                    child: Text(
-                      'About Us',
-                      style: TextStyle(color: Colors.white),
-                    ),
-                  ),
-                ),
-                SizedBox(
-                  width: 130,
-                  child: RaisedButton(
-                    color: Colors.blueAccent,
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => ContactUs()),
-                      );
-                    },
-                    child: Text(
-                      'Contact',
-                      style: TextStyle(color: Colors.white),
-                    ),
-                  ),
-                ),
-                Container(
-                  height: 30,
-                ),
-                SizedBox(
-                  width: 130,
-                  child: RaisedButton(
+                  // SizedBox(
+                  //   width: 130,
+                  //   child: RaisedButton(
+                  //     color: Colors.blueAccent,
+                  //     onPressed: () {
+                  //       Navigator.push(
+                  //         context,
+                  //         MaterialPageRoute(builder: (context) => MyHomePage()),
+                  //       );
+                  //     },
+                  //     child: Text(
+                  //       'Manage Books',
+                  //       style: TextStyle(color: Colors.white),
+                  //     ),
+                  //   ),
+                  // ),
+                  SizedBox(
+                    width: 250,
+                    child: RaisedButton(
+                      color: Colors.blueAccent,
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => BooksScreen()),
+                        );
+                      },
                       child: Text(
-                        "Logout",
+                        'Read Books',
                         style: TextStyle(color: Colors.white),
                       ),
-                      color: Colors.redAccent,
+                    ),
+                  ),
+                  SizedBox(
+                    width:250,
+                    child: RaisedButton(
+                      color: Colors.blueAccent,
                       onPressed: () {
-                        logout(context);
-                      }),
-                ),
-              ]),
-            ],
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => AboutUs()),
+                        );
+                      },
+                      child: Text(
+                        'About Us',
+                        style: TextStyle(color: Colors.white),
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 250,
+                    child: RaisedButton(
+                      color: Colors.blueAccent,
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => ContactUs()),
+                        );
+                      },
+                      child: Text(
+                        'Contact',
+                        style: TextStyle(color: Colors.white),
+                      ),
+                    ),
+                  ),
+                  Container(
+                    height: 30,
+                  ),
+                  SizedBox(
+                    width: 250,
+                    child: RaisedButton(
+                        child: Text(
+                          "Logout",
+                          style: TextStyle(color: Colors.white),
+                        ),
+                        color: Colors.blueGrey,
+                        onPressed: () {
+                          logout(context);
+                        }),
+                  ),
+                ]),
+              ],
+            ),
           ),
         ),
       ),

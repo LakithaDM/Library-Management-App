@@ -10,6 +10,13 @@ class AboutUs extends StatelessWidget {
         title: const Text('About Us'),
       ),
       body: Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage("assets/images/body2.jpg"),
+            fit: BoxFit.cover,
+          ),
+        ),
+        
         child: SingleChildScrollView(
           child: Container(
             /*decoration: BoxDecoration(
@@ -23,25 +30,16 @@ class AboutUs extends StatelessWidget {
               Container(
                 height: 30,
               ),
-              InkWell(
-                splashColor: Colors.white.withOpacity(0.5),
-                radius: 200,
-                child: Ink(
-                  height: 180,
-                  width: 250,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage('assets/images/app_logo.png'),
-                      fit: BoxFit.fill,
-                    ),
-                  ),
+               SizedBox(
+                  height: 240,
+                  child: Image.asset("assets/images/app_logo.png", fit: BoxFit.contain),
                 ),
-              ),
               Container(
                 padding: EdgeInsets.symmetric(horizontal: 25, vertical: 10),
                 child: Text(
                   'In BookFlo library automation system with smart ID, all the registered students and staff members to the library will be given a RFID card with a unique membership ID number encoded. The members will be able scan the ID for authentication, to borrow and return books quickly',
                   style: TextStyle(fontSize: 18),
+                  
                 ),
               ),
               Container(
