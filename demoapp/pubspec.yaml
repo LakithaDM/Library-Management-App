@@ -93,6 +93,8 @@ flutter:
     - assets/images/achi.png
     - assets/images/dulan.png
     - assets/images/flo_ro.png
+    - assets/images/backgroundimg.jpg
+    - assets/images/campus.jpg
     
   #   - images/a_dot_ham.jpeg
 

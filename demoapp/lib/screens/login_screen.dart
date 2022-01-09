@@ -103,38 +103,46 @@ class _LoginScreenState extends State<LoginScreen> {
 
     return Scaffold(
       backgroundColor: Colors.white,
-      body: Center(
-        child: SingleChildScrollView(
-          child: Container(
-            color: Colors.white,
-            child: Padding(
-              padding: const EdgeInsets.all(36.0),
-              child: Form(
-                key: _formKey,
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: <Widget>[
-                    SizedBox(
-                        height: 300,
-                        child: Image.asset(
-                          "assets/images/app_logo.png",
-                          fit: BoxFit.contain,
-                        )),
-                    SizedBox(height: 5),
-                    emailField,
-                    SizedBox(height: 25),
-                    passwordField,
-                    SizedBox(height: 35),
-                    loginButton,
-                    SizedBox(height: 15),
-                    Container(
-                      child: Text(
-                        'Powered by Team Alchemists',
-                        style: TextStyle(color: Colors.grey),
-                      ),
-                    )
-                  ],
+      body: Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage("assets/images/campus.jpg"),
+            fit: BoxFit.cover,
+          ),
+        ),
+        child: Center(
+          child: SingleChildScrollView(
+            child: Container(
+              //color: Colors.white,
+              child: Padding(
+                padding: const EdgeInsets.all(36.0),
+                child: Form(
+                  key: _formKey,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: <Widget>[
+                      SizedBox(
+                          height: 300,
+                          child: Image.asset(
+                            "assets/images/app_logo.png",
+                            fit: BoxFit.contain,
+                          )),
+                      SizedBox(height: 5),
+                      emailField,
+                      SizedBox(height: 25),
+                      passwordField,
+                      SizedBox(height: 35),
+                      loginButton,
+                      SizedBox(height: 15),
+                      Container(
+                        child: Text(
+                          'Powered by Team Alchemists',
+                          style: TextStyle(color: Colors.grey),
+                        ),
+                      )
+                    ],
+                  ),
                 ),
               ),
             ),
@@ -153,7 +161,7 @@ class _LoginScreenState extends State<LoginScreen> {
             .then((uid) => {
                   Fluttertoast.showToast(msg: "Login Successful"),
                   Navigator.of(context).pushReplacement(
-                      MaterialPageRoute(builder: (context) => SplashScreen())),
+                      MaterialPageRoute(builder: (context) => MyHomePage())),
                 });
       } on FirebaseAuthException catch (error) {
         switch (error.code) {

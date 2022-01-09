@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:demoapp/screens/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'home_screen.dart';
 
@@ -13,9 +14,9 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     Timer(
-        Duration(seconds: 5),
+        Duration(seconds: 3),
         () => Navigator.pushReplacement(
-            context, MaterialPageRoute(builder: (context) => MyHomePage())));
+            context, MaterialPageRoute(builder: (context) => LoginScreen())));
   }
 
   Widget build(BuildContext context) {
@@ -37,24 +38,24 @@ class _SplashScreenState extends State<SplashScreen> {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Container(
-                height: 50,
+                height: 200,
               ),
               Container(
                   padding: EdgeInsets.all(10),
-                  child: Image.asset('assets/images/flo.png')),
-              Container(
-                padding: EdgeInsets.only(right: 11),
-                alignment: Alignment.topRight,
-                child: Text(
-                  'Powered by Team Alchemists',
-                  style: TextStyle(color: Colors.grey),
-                ),
-              ),
-              Container(height: 5,),
-              Container(
-                child: Image.asset('assets/images/bookflo.png'),
-                padding: EdgeInsets.all(10),
-              ),
+                  child: Image.asset('assets/images/app_logo.png')),
+              // Container(
+              //   padding: EdgeInsets.only(right: 11),
+              //   alignment: Alignment.topRight,
+              //   // child: Text(
+              //   //   'Powered by Team Alchemists',
+              //   //   style: TextStyle(color: Colors.grey),
+              //   // ),
+              // ),
+              Container(height: 50,),
+              // Container(
+              //   child: Image.asset('assets/images/bookflo.png'),
+              //   padding: EdgeInsets.all(10),
+              // ),
               Container(
                 height: 42,
               ),
@@ -68,7 +69,7 @@ class _SplashScreenState extends State<SplashScreen> {
               ),
               Container(
                 child: Text(
-                  'Loading System',
+                  'Please Wait',
                   style: TextStyle(color: Colors.grey),
                 ),
               ),
